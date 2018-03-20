@@ -1,0 +1,29 @@
+Echelle d'importance : 1 -> 100 : Hight priority -> Low priority
+
+Roman / Mehdi :
+	A faire ASAP :
+	- Créer les differentes Views de l'appliaction (Login, Home, Game, Inventaire...) P -> 1
+	- Créer les Controller pour ces Views (model MVC) P -> 2
+	- Permettre la navigation entre ces Views (Login -> Home, Home -> Inventaire, ...) P -> 2
+
+	A faire :
+	- Analyser les différents flux reçus du serveur (pour l'inventaire et les déplacements du joueurs) P -> 3
+	- Créer des fonctions de parsing pour ces flux. P -> 3
+
+Quentin :
+	A faire ASAP :
+	- R&D pour la gestion des différents flux entrant (multithreading ? Fork ? Select ?) P -> 1
+	- R&D pour la gestion des différents flux sortant (inventaire et controles personnage) P -> 1
+
+	A faire :
+	- Articulation entre les flux entrant et sortant. P -> 2
+	- Articulation entre les flux entrant et les Views. P -> 2
+	- Articulation entre les flux sortant et les Views. P -> 2
+
+Général :
+	A faire :
+	- Interet de la mise en place d'une BDD pour l'application P -> 5
+	- Gestion de compte utilisateur ? P -> 10
+	- Charte Graphique ? P -> 15
+	- Gestion des contrôles du joueur ? P -> 4
+
