@@ -13,7 +13,14 @@ Roman / Mehdi :
 Quentin :
 	A faire ASAP :
 	- R&D pour la gestion des différents flux entrant (multithreading ? Fork ? Select ?) P -> 1
+		-> 1 thread pour l'inventaire : requete au serveur en boucle (/seconde?), pas de mise en place de renvoi de données pour 			le moment. Utilisation de la lib Socket et Thread (Scanner, PrintWriter). Data reçu de type json.
+			A prévoir : Dans le cas du changment de personnage controlé, l'inventaire doit lui aussi changer, par quelle 				procédure?
+		-> 1 thread pour la map : requete au serveur en boucle (/seconde?). Data reçu de type json.
+		
 	- R&D pour la gestion des différents flux sortant (inventaire et controles personnage) P -> 1
+		-> Pour les controles du joueur : En attente de la mise en place coté serveur.
+		-> Pour changement de joueur : Info a avoir : Format de la demande ? Voir équipe serveur.
+		-> Pour modification de l'inventaire : En attente de la mise en place serveur vers plugin.
 
 	A faire :
 	- Articulation entre les flux entrant et sortant. P -> 2
