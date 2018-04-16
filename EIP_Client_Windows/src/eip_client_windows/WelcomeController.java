@@ -37,11 +37,20 @@ public class WelcomeController implements Initializable {
     private Stage mainstage;
     
     @FXML
-    private void Connect(ActionEvent event) {
+    public void Connect(ActionEvent event) {
         s_ip = w_ip.getText();
         s_port = w_port.getText();
         
         port = Integer.parseInt(s_port);
+            try {
+                root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+                scene = new Scene(root);
+                mainstage = (Stage)  ((Node)event.getSource()).getScene().getWindow();
+                mainstage.setScene(scene);
+                mainstage.show();
+            } catch (IOException ex) {
+                Logger.getLogger(WelcomeController.class.getName()).log(Level.SEVERE, null, ex);
+            }
         
     }
     
