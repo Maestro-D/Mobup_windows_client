@@ -68,21 +68,36 @@ public class FeatureController implements Initializable {
             }
     }
     
-    @FXML
-    public void Go_Back(ActionEvent event){
-            try {
-                root = FXMLLoader.load(getClass().getResource("Inventory.fxml"));
-                scene = new Scene(root);
-                mainstage = (Stage)  ((Node)event.getSource()).getScene().getWindow();
-                mainstage.setScene(scene);
-                mainstage.show();
-            } catch (IOException ex) {
-                Logger.getLogger(FeatureController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-    }
+//    @FXML
+//    public void Go_Back(ActionEvent event){
+//            try {
+//                root = FXMLLoader.load(getClass().getResource("Inventory.fxml"));
+//                scene = new Scene(root);
+//                mainstage = (Stage)  ((Node)event.getSource()).getScene().getWindow();
+//                mainstage.setScene(scene);
+//                mainstage.show();
+//            } catch (IOException ex) {
+//                Logger.getLogger(FeatureController.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//    }
     
-        private void viewItem(String id){
+        @FXML
+        private void viewItem(String id, ActionEvent e){
             System.out.println("Je suis dans ViewItem pour l'item" + id);
+                        try {
+                            System.out.println("EventHandler: etape 1");
+                            root = FXMLLoader.load(getClass().getResource("Camera.fxml"));
+                            System.out.println("EventHandler: etape 2");
+                            scene = new Scene(root);
+                            System.out.println("EventHandler: etape 3");
+                            mainstage = (Stage) ((Node)e.getSource()).getScene().getWindow();
+                            System.out.println("EventHandler: etape 4");
+                            mainstage.setScene(scene);
+                            mainstage.show();
+                            System.out.println("EventHandler: etape 5");
+                        } catch (IOException ex) {
+                            Logger.getLogger(FeatureController.class.getName()).log(Level.SEVERE, null, ex);
+                        }
         }
 
         private void Inventory(){
@@ -97,21 +112,21 @@ public class FeatureController implements Initializable {
                     item.setId(Integer.toString(i)); //remplacer paramètre par id de l'item en cours
                     item.setOnAction((ActionEvent e) -> {
                         System.out.println("Je suis dans mon eventhandler ! " + item.getId());
-                        try {
-                            System.out.println("EventHandler: etape 1");
-                            root = FXMLLoader.load(getClass().getResource("Item.fxml"));
-                            System.out.println("EventHandler: etape 2");
-                            scene = new Scene(root);
-                            System.out.println("EventHandler: etape 3");
-                            mainstage = (Stage) ((Node)e.getSource()).getScene().getWindow();
-                            System.out.println("EventHandler: etape 4");
-                            mainstage.setScene(scene);
-                            mainstage.show();
-                            System.out.println("EventHandler: etape 5");
-                        } catch (IOException ex) {
-                            Logger.getLogger(FeatureController.class.getName()).log(Level.SEVERE, null, ex);
-                        }
-                        viewItem(item.getId());
+//                        try {
+//                            System.out.println("EventHandler: etape 1");
+//                            root = FXMLLoader.load(getClass().getResource("Item.fxml"));
+//                            System.out.println("EventHandler: etape 2");
+//                            scene = new Scene(root);
+//                            System.out.println("EventHandler: etape 3");
+//                            mainstage = (Stage) ((Node)e.getSource()).getScene().getWindow();
+//                            System.out.println("EventHandler: etape 4");
+//                            mainstage.setScene(scene);
+//                            mainstage.show();
+//                            System.out.println("EventHandler: etape 5");
+//                        } catch (IOException ex) {
+//                            Logger.getLogger(FeatureController.class.getName()).log(Level.SEVERE, null, ex);
+//                        }
+                        viewItem(item.getId(), e);
                     });
                     box.getChildren().add(item);
                 }
