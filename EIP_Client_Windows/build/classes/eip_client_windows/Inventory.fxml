@@ -23,10 +23,6 @@
         <content>
         <VBox prefWidth="200" alignment="center" fx:id="box">
             <children>
-                <Label alignment="center" fx:id="gcProgramLine" text="g0x100 y123 z23"/>
-                <Label alignment="center" fx:id="gcProgramLine2" text="g0x121 y13 z23"/>
-                <Label alignment="center" fx:id="gcProgramLine3" text="g0x10 y113 z23"/>
-                <Label alignment="center" fx:id="gcProgramLine4" text="g0x100 y123 z23"/>
             </children>
         </VBox>
         </content>
