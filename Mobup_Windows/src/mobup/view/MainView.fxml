@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobup.controller.MainController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="322.0" layoutY="69.0" prefHeight="59.0" prefWidth="157.0" text="Mobup" textAlignment="CENTER" textFill="#1863c6">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField fx:id="passwordField" layoutX="326.0" layoutY="238.0" promptText="Password" />
+      <TextField fx:id="usernameField" layoutX="326.0" layoutY="175.0" promptText="Username" />
+      <Button fx:id="LoginButton" layoutX="352.0" layoutY="324.0" mnemonicParsing="false" onAction="#goToGameSelection" prefHeight="25.0" prefWidth="97.0" text="Conexion" />
+   </children>
+</AnchorPane>

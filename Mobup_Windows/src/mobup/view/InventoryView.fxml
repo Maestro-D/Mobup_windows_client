@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobup.controller.InventoryController">
+   <top>
+      <SplitPane dividerPositions="0.7516025641025641" prefHeight="138.0" prefWidth="1250.0" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="139.0" prefWidth="937.0" text="Inventory" textFill="#1d88d3">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToGameSelection" prefHeight="25.0" prefWidth="284.0" text="Home" />
+                  <Button layoutX="12.0" layoutY="50.0" mnemonicParsing="false" onAction="#goToControls" prefHeight="25.0" prefWidth="284.0" text="Controls" />
+                  <Button layoutX="12.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToMiniMap" prefHeight="25.0" prefWidth="284.0" text="Mini Map" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.7516025641025641" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="ItemTab" layoutX="360.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="935.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn prefWidth="273.0" text="Name" />
+                      <TableColumn minWidth="0.0" prefWidth="75.0" text="Quantity" />
+                        <TableColumn prefWidth="586.0" text="Description" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="56.0" layoutY="249.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="195.0" text="Delete" />
+                  <Button layoutX="56.0" layoutY="175.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="195.0" text="Use" />
+                  <Button layoutX="56.0" layoutY="318.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="195.0" text="Overview" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

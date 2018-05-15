@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#showPressedKey" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobup.controller.ControlsController">
+	<top>
+      <VBox prefHeight="135.0" prefWidth="1250.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.7516025641025641" prefHeight="144.0" prefWidth="1250.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="135.0" prefWidth="937.0" text="Controls" textFill="#1d88d3">
+                           <font>
+                              <Font size="41.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToGameSelection" prefHeight="25.0" prefWidth="284.0" text="Home" />
+                        <Button layoutX="12.0" layoutY="50.0" mnemonicParsing="false" onAction="#goToMiniMap" prefHeight="25.0" prefWidth="284.0" text="Mini Map" />
+                        <Button layoutX="12.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="25.0" prefWidth="284.0" text="Inventory" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <ImageView fitHeight="660.0" fitWidth="1045.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../../EIP/IntructionKeyboard.png" />
+         </image></ImageView>
+   </center>
+</BorderPane>

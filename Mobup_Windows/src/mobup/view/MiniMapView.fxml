@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobup.controller.MiniMapController">
+   <bottom>
+      <VBox prefHeight="131.0" prefWidth="1250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="143.0" prefWidth="1250.0" text="S">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
+   <left>
+      <HBox prefHeight="474.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="86.0" prefWidth="164.0" text="W">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="175.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox prefHeight="474.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="86.0" prefWidth="164.0" text="E">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="175.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </right>
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.7516025641025641" prefHeight="138.0" prefWidth="1250.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="114.0" prefWidth="937.0" text="Mini Map" textFill="#1d88d3">
+                           <font>
+                              <Font size="41.0" />
+                           </font>
+                           <padding>
+                              <Insets left="310.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToGameSelection" prefHeight="25.0" prefWidth="284.0" text="Home" />
+                        <Button layoutX="12.0" layoutY="50.0" mnemonicParsing="false" onAction="#goToInventory" prefHeight="25.0" prefWidth="284.0" text="Inventory" />
+                        <Button layoutX="12.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToControls" prefHeight="25.0" prefWidth="284.0" text="Controls" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="1250.0" text="N">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
