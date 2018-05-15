@@ -1,9 +1,12 @@
 package mobup.controller;
 
 import java.io.IOException;
+
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import mobup.Items;
 import mobup.Main;
+import mobup.SendAndGetInventory;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -15,7 +18,7 @@ import javafx.fxml.FXML;
 public class InventoryController {
 	
 	@FXML
-    private TableView<Items> ItemTab;
+    private static TableView<Items> ItemTab;
 	
 	@FXML
     private TableColumn<Items, Integer> idCol;
@@ -50,11 +53,16 @@ public class InventoryController {
 		nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
 		quantityCol.setCellValueFactory(new PropertyValueFactory<>("quantity"));
 		detailCol.setCellValueFactory(new PropertyValueFactory<>("detail"));
-		ItemTab.setItems(Main.getInventoryItems());
+		//ItemTab.setItems(Main.getInventoryItems());
 	}
 	
 	@FXML
 	private void updateInventoryAgain(ActionEvent event) throws IOException {
-		ItemTab.setItems(Main.getInventoryItemsAgain());
+		SendAndGetInventory test = new SendAndGetInventory("A", "192.168.230.1", 9999);
+		test.start();
+	}
+	
+	public static void updateItemsTab(ObservableList<Items> tab) {
+		ItemTab.setItems(tab);
 	}
 }

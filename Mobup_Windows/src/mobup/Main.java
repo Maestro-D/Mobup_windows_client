@@ -78,7 +78,7 @@ public class Main extends Application {
 		primaryStage.show();
 	}
 	
-	public static ObservableList<Items> getInventoryItems() {
+	/*public static ObservableList<Items> getInventoryItems() {
 		ObservableList<Items> items = FXCollections.observableArrayList();
 		
 		items.add(new Items(1, "Boite de pandorre", 2, "Ne pas ouvrir pls"));
@@ -99,7 +99,7 @@ public class Main extends Application {
 		items.add(new Items(3, "Pokéballs", 144, "Attrapez les tous"));
 		
 		return items;
-	}
+	}*/
 	
 	public static void main(String[] args) {
 		launch(args);
