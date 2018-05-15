@@ -3,6 +3,8 @@ package mobup;
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -74,6 +76,29 @@ public class Main extends Application {
 		Scene scene = new Scene(mainLayout);
 		primaryStage.setScene(scene);
 		primaryStage.show();
+	}
+	
+	public static ObservableList<Items> getInventoryItems() {
+		ObservableList<Items> items = FXCollections.observableArrayList();
+		
+		items.add(new Items(1, "Boite de pandorre", 2, "Ne pas ouvrir pls"));
+		items.add(new Items(2, "Arc de l'aveugle", 1, "Fermer un oeil pour mieux viser"));
+		items.add(new Items(3, "Pokéballs", 144, "Attrapez les tous"));
+		
+		return items;
+	}
+	
+	public static ObservableList<Items> getInventoryItemsAgain() {
+		ObservableList<Items> items = FXCollections.observableArrayList();
+		
+		items.add(new Items(1, "Boite de pandorre", 2, "Ne pas ouvrir pls"));
+		items.add(new Items(2, "Arc de l'aveugle", 1, "Fermer un oeil pour mieux viser"));
+		items.add(new Items(3, "Pokéballs", 144, "Attrapez les tous"));
+		items.add(new Items(3, "Pokéballs", 144, "Attrapez les tous"));
+		items.add(new Items(3, "Pokéballs", 144, "Attrapez les tous"));
+		items.add(new Items(3, "Pokéballs", 144, "Attrapez les tous"));
+		
+		return items;
 	}
 	
 	public static void main(String[] args) {

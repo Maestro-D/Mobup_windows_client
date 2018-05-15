@@ -38,9 +38,10 @@
                <children>
                   <TableView fx:id="ItemTab" layoutX="360.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="935.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn prefWidth="273.0" text="Name" />
-                      <TableColumn minWidth="0.0" prefWidth="75.0" text="Quantity" />
-                        <TableColumn prefWidth="586.0" text="Description" />
+                        <TableColumn fx:id="idCol" prefWidth="46.0" text="Id" />
+                      <TableColumn fx:id="nameCol" prefWidth="281.0" text="Name" />
+                      <TableColumn fx:id="quantityCol" minWidth="0.0" prefWidth="69.0" text="Quantity" />
+                        <TableColumn fx:id="detailCol" prefWidth="613.0" text="Description" />
                     </columns>
                   </TableView>
                </children>
@@ -50,6 +51,8 @@
                   <Button layoutX="56.0" layoutY="249.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="195.0" text="Delete" />
                   <Button layoutX="56.0" layoutY="175.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="195.0" text="Use" />
                   <Button layoutX="56.0" layoutY="318.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="195.0" text="Overview" />
+                  <Button layoutX="56.0" layoutY="510.0" mnemonicParsing="false" onAction="#updateInventory" prefHeight="24.0" prefWidth="195.0" text="Refresh" />
+                  <Button layoutX="56.0" layoutY="554.0" mnemonicParsing="false" onAction="#updateInventoryAgain" prefHeight="24.0" prefWidth="195.0" text="Refresh 2" />
                </children>
             </AnchorPane>
         </items>
