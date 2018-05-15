@@ -38,7 +38,7 @@
    <center>
       <ImageView fitHeight="660.0" fitWidth="1045.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../../../../EIP/IntructionKeyboard.png" />
+            <Image url="@../../../../IntructionKeyboard.png" />
          </image></ImageView>
    </center>
 </BorderPane>
