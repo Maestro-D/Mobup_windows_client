@@ -1,8 +1,7 @@
-Echelle d'importance : 1 -> 100 : Hight priority -> Low priority
+﻿Echelle d'importance : 1 -> 100 : Hight priority -> Low priority
 
 Roman / Mehdi :
 	A faire ASAP :
-	- Créer les differentes Views de l'appliaction (Login, Home, Game, Inventaire...) P -> 1
 	- Créer les Controller pour ces Views (model MVC) P -> 2
 	- Permettre la navigation entre ces Views (Login -> Home, Home -> Inventaire, ...) P -> 2
 
