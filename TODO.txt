@@ -2,6 +2,7 @@
 
 Roman / Mehdi :
 	A faire ASAP :
+	-TEST
 	- Créer les Controller pour ces Views (model MVC) P -> 2
 	- Permettre la navigation entre ces Views (Login -> Home, Home -> Inventaire, ...) P -> 2
 
