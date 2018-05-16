@@ -35,3 +35,24 @@
    -fx-background-color: transparent;
 }
 }
+
+/*STYLE DE LA PAGE*/
+#AnchorPane {
+    -fx-background-color: #3c3c3d;
+}
+
+/*STYLE DU TITRE*/
+#Title {
+    -fx-font-size: 21pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ffffff;
+}
+
+/*STYLE DU BOUTON*/
+#button {
+    -fx-background-color: #4b62ad;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}

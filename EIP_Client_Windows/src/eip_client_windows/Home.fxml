@@ -11,22 +11,22 @@
         <URL value="@home.css" />
     </stylesheets>
    <children>
-      <Label layoutX="176.0" layoutY="37.0" text="Select Your Game Mode">
+      <Label id="Title" layoutX="145.0" layoutY="37.0" text="Select Your Game Mode">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="264.0" layoutY="164.0" mnemonicParsing="false" text="Inventory" textAlignment="CENTER" onAction="#Go_to_Inventory">
+      <Button id="button" layoutX="264.0" layoutY="164.0" mnemonicParsing="false" text="Inventory" textAlignment="CENTER" onAction="#Go_to_Inventory">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="269.0" layoutY="217.0" mnemonicParsing="false" text="Camera" onAction="#Go_to_Camera">
+      <Button id="button" layoutX="269.0" layoutY="217.0" mnemonicParsing="false" text="Camera" onAction="#Go_to_Camera">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="263.0" layoutY="275.0" mnemonicParsing="false" text="Controller" onAction="#Go_to_Controller">
+      <Button id="button" layoutX="263.0" layoutY="275.0" mnemonicParsing="false" text="Controller" onAction="#Go_to_Controller">
          <font>
             <Font size="14.0" />
          </font>
